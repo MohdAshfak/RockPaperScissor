@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Boolean</title>
+      <style>
+        
+      </style>
+    </head>
+  <body>
+    <p>Rock Paper Scissors</p>
+
+    <button onclick="
+      const randomNum= Math.random()
+
+      if (randomNum < 1/3) {//rock
+        alert(`you select Rock,Computer select Rock ,Draw`);
+        draw +=1;
+        console.log(`you ${youPoint}`);
+        console.log(`computer ${computerPoint}`)
+        console.log(`Draw ${draw}`)
+
+      
+      
+      }else if (randomNum > 1/3 && randomNum < 1/2){  //paper
+        Rock=1;
+        alert(`you select Rock,Computer select Paper,Computer win`);
+        computerPoint +=1;
+        console.log(`you ${youPoint}`);
+        console.log(`computer ${computerPoint}`)
+        console.log(`Draw ${draw}`)
+
+      }else{ //scissor
+        scissor=2;  
+        alert(`you select Rock,Computer select Scissor,You win`);
+        youPoint +=1;
+        console.log(`you ${youPoint}`);
+        console.log(`computer ${computerPoint}`)
+        console.log(`Draw ${draw}`)
+      }
+     
+     ">Rock</button>
+  
+
+    <button onclick="
+    const randomNum= Math.random()
+
+    if (randomNum < 1/3) {//rock
+      alert(`you select Paper,Computer select Rock,you win`);
+      youPoint +=1;
+      console.log(`you ${youPoint}`);
+      console.log(`computer ${computerPoint}`)
+      console.log(`Draw ${draw}`)
+
+    
+    
+    }else if (randomNum > 1/3 && randomNum < 1/2){  //paper
+      Rock=1;
+      alert(`you select paper,Computer select Paper,draw`);
+      draw +=1;
+      console.log(`you ${youPoint}`);
+      console.log(`computer ${computerPoint}`)
+      console.log(`Draw ${draw}`)
+
+    }else{ //scissor
+      scissor=2;  
+      alert(`you select Paper,Computer select Scissor,computer Win`);
+      computerPoint +=1;
+      console.log(`you ${youPoint}`);
+      console.log(`computer ${computerPoint}`)
+      console.log(`Draw ${draw}`)
+    }
+
+   
+   ">Paper</button>
+
+    <button onclick="
+    const randomNum= Math.random()
+
+    if (randomNum < 1/3) {//rock
+      alert(`you select Scissor,Computer select Rock ,computer win`);
+      computerPoint +=1;
+      console.log(`you ${youPoint}`);
+      console.log(`computer ${computerPoint}`)
+      console.log(`Draw ${draw}`)
+
+    
+    
+    }else if (randomNum > 1/3 && randomNum < 1/2){  //paper
+      Rock=1;
+      alert(`you select scissor,Computer select Paper,you win`);
+      youPoint +=1;
+      console.log(`you ${youPoint}`);
+      console.log(`computer ${computerPoint}`)
+      console.log(`Draw ${draw}`)
+
+    }else{ //scissor
+      scissor=2;  
+      alert(`you select scissor,Computer select Scissor,Draw`);
+      draw +=1;
+      console.log(`you ${youPoint}`);
+      console.log(`computer ${computerPoint}`)
+      console.log(`Draw ${draw}`)
+    }
+   ">Scissor</button>
+    
+
+    <script>
+      youPoint=0;
+      computerPoint=0;
+      draw=0;
+    
+    </script>
+  </body>
+</html>
